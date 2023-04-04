@@ -1,0 +1,12 @@
+
+  {% load static %}
+  <link rel="stylesheet" type="text/css" href="{% static 'polls/style.css' %}">
+  <head>
+    <title>Polls</title>
+  </head>
+
+  <body>
+    <h1>Welcome to the polls site</h1>
+    <p>Please enjoy answering some polls blah blah</p>
+    <a id="linkToPolls" href ="{% url 'polls:index' %}">View Available Polls</a>
+  </body>
